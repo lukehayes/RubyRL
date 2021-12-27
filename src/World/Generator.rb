@@ -31,7 +31,14 @@ module World
 
       @map
     end
+
+    def draw
+      for x in 0..HEIGHT
+        for y in 0..WIDTH
+          print @map[x][y]
         end
+
+        puts " "
       end
     end
 
