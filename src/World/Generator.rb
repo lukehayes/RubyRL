@@ -7,7 +7,7 @@ module World
 
     attr_reader :map
 
-    def initialize()
+    def initialize
       @map = [[]]
     end
 
