@@ -13,22 +13,24 @@ module World
 
     def generate
 
-      for x in 1..HEIGHT
+      for x in 0..HEIGHT
           row = []
-          row << "#"
 
-          if x == HEIGHT
-            row << "#"
+          for y in 0..WIDTH
+
+            row << "."
+
           end
-
-        for y in 1..WIDTH
-          print "."
-          if y == WIDTH
-            print "\n"
+          if x > HEIGHT
+            row << "\n"
           end
 
           @map << row
 
+      end
+
+      @map
+    end
         end
       end
     end
